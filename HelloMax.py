@@ -1,10 +1,11 @@
 # Test code:
 
-name = input("What is your name: ")
-age = input("What is your age: ")
-age =int(age)
-die = 100 - age
-dead_year = 2020+die
+number = int(input("Input a number: "))
 
-print("Your name is " + name)
-print(" and you will live until " + str(dead_year))
+diff = number % 2 # if odd = 1, if even = 0 (no remainder)
+if (diff == 1):
+    print("The number " + str(number) + " is odd")
+else:
+    print("The number " + str(number) + " is even")
+
+
