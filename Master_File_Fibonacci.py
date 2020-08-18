@@ -79,5 +79,5 @@ def getfiboNumb(nn, fibo_rec):
         return getfiboNumb(nn-1, fibo_rec + fibo_old_1 + fibo_old_2)
         fibo_old_2 = fibo_old_1
         fibo_old_1 = fibo_rec
-
+ #hej
 print(getfiboNumb(N,0))
