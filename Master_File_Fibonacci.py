@@ -66,18 +66,18 @@
 
 #  Create a function that has correct conditions
 N = 4
-def getFibboNumb(nn, fibbo_rec):
-    fibbo_old_2 = 0  # 1st initial oldest value of stored Fibonacci Number
-    fibbo_old_1 = 1  # 2nd initial latest old value of stored Fibonacci Number
+def getfiboNumb(nn, fibo_rec):
+    fibo_old_2 = 0  # 1st initial oldest value of stored Fibonacci Number
+    fibo_old_1 = 1  # 2nd initial latest old value of stored Fibonacci Number
 
 
     if nn == 1:
-        return fibbo_old_2
+        return fibo_old_2
     elif nn == 2:
-        return fibbo_old_1
+        return fibo_old_1
     else:
-        return getFibboNumb(nn-1, fibbo_rec + fibbo_old_1 + fibbo_old_2)
-        fibbo_old_2 = fibbo_old_1
-        fibbo_old_1 = fibbo_rec
+        return getfiboNumb(nn-1, fibo_rec + fibo_old_1 + fibo_old_2)
+        fibo_old_2 = fibo_old_1
+        fibo_old_1 = fibo_rec
 
-print(getFibboNumb(N,0))
+print(getfiboNumb(N,0))
