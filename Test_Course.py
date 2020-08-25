@@ -15,6 +15,8 @@ excel_sheet = excel_workbook.sheet_by_name("Raw_Data")
 
 # PART I: Gather the data from file
 
+#Focus on the correct parameters
+
 excel_rows = excel_sheet.nrows
 excel_cols = excel_sheet.ncols
 excel_table = list()
